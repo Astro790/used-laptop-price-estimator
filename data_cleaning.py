@@ -2,8 +2,8 @@ from pathlib import Path
 import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parent
-RAW_PATH = BASE_DIR / "Dataset" / "ebay_data_clean.csv"
-CLEAN_PATH = BASE_DIR / "Dataset" / "cleaned_ebay_data.csv"
+RAW_PATH = BASE_DIR / "dataset" / "ebay_data_clean.csv"
+CLEAN_PATH = BASE_DIR / "dataset" / "cleaned_ebay_data.csv"
 df = pd.read_csv(RAW_PATH)
 print("Original Data shape:", df.shape)
 df = df[df["Condition"] != "New"]
